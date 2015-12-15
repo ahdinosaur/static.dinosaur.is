@@ -1,9 +1,10 @@
 #!/bin/bash
 
-if [[ "$!" == "" ]]
+if [[ "$1" == "" ]]
 then
   echo "file to copy not given!"
-end
+  exit 1
+fi
 
 scp $1 root@static.dinosaur.is:/home/dokku/.data/static
-chown -R dokku:dokku /home/dokku/.data/static
+ssh root@static.dinosaur.is chown -R dokku:dokku /home/dokku/.data/static
