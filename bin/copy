@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$!" == "" ]]
+then
+  echo "file to copy not given!"
+end
+
+scp $1 root@static.dinosaur.is:/home/dokku/.data/static
+chown -R dokku:dokku /home/dokku/.data/static

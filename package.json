@@ -1,0 +1,25 @@
+{
+  "name": "static.dinosaur.is",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my static file server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "bin/copy",
+    "start": "ecstatic data -p $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/static.dinosaur.is.git"
+  },
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.os)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/static.dinosaur.is/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/static.dinosaur.is#readme",
+  "dependencies": {
+    "ecstatic": "^1.3.1"
+  }
+}
